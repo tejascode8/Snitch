@@ -20,11 +20,16 @@ Snitch/
          │   │   └── auth/
          │   │       ├── hook/
          │   │       │   └── useAuth.js
+         │   │       ├── pages/
+         │   │       │   ├── Register.jsx
+         │   │       │   └── Login.jsx
          │   │       ├── service/
          │   │       │   └── auth.api.js
          │   │       └── state/
          │   │           └── auth.slice.js
          │   └── main.jsx
+         ├── public/
+         |   └── snitch.editorial.png
          ├── .gitignore
          ├── eslint.config.js
          ├── index.html
@@ -156,6 +161,7 @@ The backend dependencies are defined in `backend/package.json`:
 - `npm instal express-validator` — request validation
 - `npm instal jsonwebtoken` — JWT token creation
 - `npm instal morgan` — request logging
+- `npm install cors` — middleware to enable Cross-Origin Resource Sharing (allows frontend and backend to communicate across different origins)
 
 ---
 
