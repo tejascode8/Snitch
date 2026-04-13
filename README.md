@@ -2,11 +2,51 @@
 
 ## Project Overview
 
-This repository contains the backend for the Snitch application. It is built with Node.js, Express, and MongoDB. The backend provides authentication support with user registration and login, including password hashing and JWT cookie issuance.
+Snitch is a full-stack application with a Node.js backend and a modern React frontend. The backend is built using Express and MongoDB, providing secure authentication with user registration and login, including password hashing and JWT cookie-based authentication.
+
+## Frontend
+
+```
+Snitch/
+    └──frontend/
+         ├── node_modules/
+         ├── src/
+         │   ├── app/
+         │   │   ├── App.css
+         │   │   ├── App.jsx
+         │   │   ├── app.routes.jsx
+         │   │   └── app.store.js
+         │   ├── features/
+         │   │   └── auth/
+         │   │       ├── hook/
+         │   │       │   └── useAuth.js
+         │   │       ├── service/
+         │   │       │   └── auth.api.js
+         │   │       └── state/
+         │   │           └── auth.slice.js
+         │   └── main.jsx
+         ├── .gitignore
+         ├── eslint.config.js
+         ├── index.html
+         ├── package-lock.json
+         ├── package.json
+         ├── README.md
+         └── vite.config.js
+```
+
+## Dependencies
+
+The frontend dependencies are defined in `frontend/package.json`:
+
+- `npm install tailwindcss @tailwindcss/vite` — installs Tailwind CSS and its Vite plugin for styling
+- `npm install axios` — HTTP client for making API requests
+- `npm install react-redux` — bindings to connect React with Redux
+- `npm install @reduxjs/toolkit` — official, simplified way to write Redux logic
+- `npm install react-router` — routing library for navigation in React apps
 
 ---
 
-## Folder Structure
+## Backend
 
 ```
 Snitch/
@@ -145,3 +185,5 @@ npm run dev
 ```
 
 The server will start on port `3000` by default.
+
+---
